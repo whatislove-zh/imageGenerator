@@ -15,6 +15,7 @@ window.addEventListener("load", dayNightTheme);
 
 const input = document.querySelector("#input");
 const grid = document.querySelector(".grid");
+const search = document.querySelector(".search")
 
 input.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
@@ -64,3 +65,7 @@ function loadImg() {
 function removeImg() {
   grid.innerHTML = "";
 }
+
+search.addEventListener("click", () => {
+  loadImg();
+})
