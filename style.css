@@ -6,7 +6,7 @@
 }
 
 body {
-  background: black;
+  background: rgb(63, 63, 63);
   color: white;
 }
 
@@ -80,5 +80,24 @@ input:focus{
     background-size: cover;
     border-radius: 2px;
 }
+.nav i{
+  color:  orange;
+}
 
+@media (max-width: 720px){
+  .search-box{
+    width: 50%;
+    left: 25%;
+    margin-top: 15px;
+  }
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 340px){
+  .nav h2{
+    font-size: 25px
+  }
+}
 
