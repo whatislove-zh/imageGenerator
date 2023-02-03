@@ -16,7 +16,7 @@ function loadImg() {
   const url =
     "https://api.unsplash.com/search/photos/?query=" +
     input.value +
-    "&per_page=9&client_id=" +
+    "&per_page=100&client_id=" +
     API;
 
   fetch(url)
@@ -34,7 +34,7 @@ function loadImg() {
         imageNodes[i] = document.createElement("div");
         imageNodes[i].className = "img";
         imageNodes[i].style.backgroundImage =
-          "url(" + data.results[i].urls.raw + ")";
+          "url(" + data.results[i].urls.small + ")";
         
         link[i] = data.results[i].links.download
         imageNodes[i].id = link[i];
